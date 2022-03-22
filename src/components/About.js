@@ -1,24 +1,9 @@
 import React from "react";
-// import user from "../data/user";
-
-function Links(prop) {
-  console.log('Links Prop:', prop)
-  return (
-    <div>
-      <h3>Links</h3>
-      <a href={prop.github}></a>
-      <a href={prop.linkedin}></a>
-    </div>
-  )
-}
+import Links from './Links'
 
 function About(props) {
   console.log("props:", props)
-  if(props.bio) {
-    <p>{props.bio}</p>
-  } else {
-    return null
-  }
+ 
   return (
     <div id="about">
       <h2>About Me</h2>
